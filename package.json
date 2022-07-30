@@ -1,0 +1,26 @@
+{
+  "name": "platform-v",
+  "version": "1.0.0",
+  "description": "earn passive income with incomee",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:x122352/css"
+  },
+  "keywords": [
+    "incomee",
+    "earn-with-incomee",
+    "pasive-income",
+    "invest-online",
+    "incomee-platform"
+  ],
+  "author": "incomee corporation group",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.2.0-beta1"
+  }
+}

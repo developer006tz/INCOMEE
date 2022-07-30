@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+
+//MY THEME COLOR
+$gold-dark:  #DAA520 !default;
+$gold-light:  #FFD700 !default;
+$no-gutter: 0px !default;
+
+*{
+    overflow-x: hidden !important;
+    
+}
+
+//white and grey color
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$overlay: rgba(0, 0, 0, 0.698);
+
+
+$primary:       $gold-dark;
+$secondary:     $gold-light;
+
+$carousel-control-color: $secondary;
+$carousel-control-width:  5%;
+$carousel-caption-color:     $secondary ;
+$carousel-indicator-active-bg:   $secondary;
+
+$carousel-indicator-width:           7px;
+$carousel-indicator-height:          7px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          4px;
+$carousel-indicator-border-radius: 50%;
+
+*{
+    a{
+      text-decoration: none !important;  
+      color: inherit !important;
+    }
+    
+    list-style: none;
+}
+
+.main-wrapper{
+    background: $primary;
+    // height: 80vh;
+    
+}
+
+.overlay{
+    background: $overlay;
+}
+
+
+
+.incomee-colour{
+    background: $secondary;
+}
+
+.incomee-bdr{
+   border-radius:6px ; 
+}
+
+// html{
+//     background: $primary;
+// }
+// body {
+//     background: $primary !important;
+// }
+.davinci-carousel-indicator{
+    border-radius: $carousel-indicator-border-radius;
+}
+
+//lets import bootstrap 5
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+// $primary: --bs-blue;
+

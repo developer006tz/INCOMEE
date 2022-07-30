@@ -1,0 +1,135 @@
+@use "../custom" as c;
+.vip-wr{
+   color: c.$light;
+   padding: 5px 0px 5px 0px;
+   background:
+	repeating-radial-gradient(
+		circle,
+		transparent,
+		transparent 3.5em,
+		tomato 3.5em,
+		tomato 4.5em
+	),
+	repeating-radial-gradient(
+		circle,
+		transparent,
+		transparent 3.5em,
+		dodgerblue 3.5em,
+		dodgerblue 4.5em
+	),
+	repeating-radial-gradient(
+		circle,
+		transparent,
+		transparent 2.5em,
+		gold 2.5em,
+		gold 2.75em
+	), floralwhite;
+
+background-blend-mode: multiply;
+background-size: 10em 10em;
+background-position:
+	0 0,
+	5em 5em,
+	10em 5em;
+
+    .vip-state{
+    
+        text-align: center;
+        font-weight: 600;
+
+    }
+
+    .info.active{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 10px;
+
+        .monetary{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .duration{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            align-self: center;
+            display: flex;
+            // justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    
+    
+}
+
+.vip-bundle-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    background:
+	repeating-radial-gradient(
+		circle,
+		transparent,
+		transparent 3em,
+		hotpink 1em,
+			transparent 6em,
+		tomato 6.5em
+	),
+	repeating-radial-gradient(
+		ellipse farthest-corner,
+		transparent 1em,
+		cornflowerblue 1em,
+		 	transparent 5em,
+		cornflowerblue 2em
+	),
+	repeating-radial-gradient(
+		circle,
+		transparent,
+		transparent 3em,
+		gold 1em,
+			transparent 2em,
+		gold 4em
+	),
+	repeating-radial-gradient(
+		circle,
+		transparent 3em,
+		gold 1em,
+			transparent 2em,
+		gold 4em
+	), white;
+
+background-blend-mode: multiply;
+background-size: 10em 10em;
+background-position: 0 0, 5em 5em, 15em 50em;
+
+    .vip-tile-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: c.$dark;
+        font-weight: 600;
+
+        .vip-name{
+            font-weight: 900;
+        }
+
+        .vip-price{
+            color: c.$dark;
+            font-weight: 700;
+            font-size: 1.3rem;
+            border: 1px solid c.$secondary;
+            padding: 3px;
+        }
+    }
+}
+
+.content-clearfix{
+    height: 200px;
+}

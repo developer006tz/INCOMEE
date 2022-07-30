@@ -1,0 +1,69 @@
+@use '../custom' as info;
+#info-header{
+    padding: 10px;
+    font-size: 1.1rem;
+    color: info.$light;
+    font-weight: 700;
+
+    background-image: linear-gradient(
+        0deg,
+        hsl(51deg 100% 50%) 0%,
+        hsl(46deg 98% 51%) 9%,
+        hsl(41deg 96% 52%) 17%,
+        hsl(36deg 94% 53%) 25%,
+        hsl(32deg 92% 54%) 32%,
+        hsl(27deg 90% 55%) 40%,
+        hsl(22deg 88% 56%) 47%,
+        hsl(22deg 88% 56%) 55%,
+        hsl(27deg 90% 55%) 62%,
+        hsl(32deg 92% 54%) 69%,
+        hsl(36deg 94% 53%) 77%,
+        hsl(41deg 96% 52%) 84%,
+        hsl(46deg 98% 51%) 92%,
+        hsl(51deg 100% 50%) 100%
+      );
+    background-blend-mode: overlay;
+
+
+    #top-info-cover{
+        .wrapper{
+           
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .avatar{
+                img{
+            
+                   
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+
+    .username-wrapper{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+        .account-name,.invitation-code{
+         
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            line-height: 2.75rem;
+            .code{
+                padding-right: 5px;
+            }
+        }
+    }
+}

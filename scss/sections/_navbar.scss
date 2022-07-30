@@ -1,0 +1,16 @@
+@use '../custom' as *;
+.menu{
+    background: linear-gradient(to right,rgba($primary,0.95),rgba($secondary,0.95));
+    
+.logo-text{
+color: $secondary;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+img{
+width: 60px;
+height: 1.1em;
+}
+
+}
